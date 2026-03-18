@@ -107,3 +107,38 @@ else:
     )
 
     st.plotly_chart(fig5, use_container_width=True)
+    
+    st.subheader("🎯 Monte Carlo Simulation")
+
+num_simulations = 100
+num_days = 252  # 1 year
+
+simulation_results = np.zeros((num_days, num_simulations))
+
+for i in range(num_simulations):
+    simulated_returns = np.random.normal(
+        portfolio_returns.mean(),
+        portfolio_returns.std(),
+        num_days
+    )
+    
+    simulation = np.cumprod(1 + simulated_returns)
+    simulation_results[:, i] = simulation
+
+# Convert to DataFrame
+sim_df = pd.DataFrame(simulation_results)
+
+# Plot simulations
+fig6 = px.line(sim_df, title="Monte Carlo Simulation (Future Portfolio Paths)")
+st.plotly_chart(fig6, use_container_width=True)
+
+# Final values
+final_values = sim_df.iloc[-1]
+
+st.subheader("📊 Simulation Insights")
+
+col1, col2, col3 = st.columns(3)
+
+col1.metric("Best Case", round(final_values.max(), 2))
+col2.metric("Worst Case", round(final_values.min(), 2))
+col3.metric("Average Outcome", round(final_values.mean(), 2))
