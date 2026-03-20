@@ -142,3 +142,22 @@ col1, col2, col3 = st.columns(3)
 col1.metric("Best Case", round(final_values.max(), 2))
 col2.metric("Worst Case", round(final_values.min(), 2))
 col3.metric("Average Outcome", round(final_values.mean(), 2))
+
+st.subheader("📉 Value at Risk (VaR)")
+
+confidence_level = 0.05
+
+VaR = portfolio_returns.quantile(confidence_level)
+
+st.metric("95% Value at Risk (Daily)", round(VaR, 4))
+
+fig7 = px.histogram(portfolio_returns, nbins=50, title="Portfolio Returns Distribution")
+
+fig7.add_vline(
+    x=VaR,
+    line_dash="dash",
+    annotation_text="VaR (95%)",
+    annotation_position="top left"
+)
+
+st.plotly_chart(fig7, use_container_width=True)
