@@ -223,14 +223,10 @@ This project serves as a **portfolio project for Financial Analyst, Risk Analyst
 
 ## 🚀 Future Improvements
 
-Planned features:
-
-- Portfolio risk analysis
-- Sharpe ratio calculation
-- Correlation heatmaps
-- Portfolio optimization
-- Monte Carlo simulations
-- AI-based stock prediction
+- Portfolio optimization (weight allocation)
+- AI-based stock recommendations
+- News sentiment analysis
+- Deployment on cloud (Streamlit Cloud / AWS)
 
 ---
 
