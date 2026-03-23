@@ -19,9 +19,40 @@ The dashboard fetches stock market data, calculates financial metrics, and visua
 - 📅 Custom Date Range Selection
 
 ---
-## 📸 Dashboard Preview
+## 📸 Screenshots
 
-![Dashboard]("Output pictures/Financial Risk Dashboard.png")
+### 📊 Dashboard
+![Dashboard](Output%20pictures/Financial%20Risk%20Dashboard.png)
+
+### 📈 Stock Price Trend
+![Stock](Output%20pictures/AAPL%20closing%20price.png)
+
+### 📊 Daily Returns
+![Returns](Output%20pictures/Daily%20returns.png)
+
+### 📉 Risk Metrics
+![Risk](Output%20pictures/Risk%20metrics.png)
+
+### 📊 Returns Distribution
+![Distribution](Output%20pictures/Returns%20distribution.png)
+
+### 💼 Portfolio Returns
+![Portfolio](Output%20pictures/Portfolio%20returns.png)
+
+### 📉 Portfolio Risk Analysis
+![Portfolio Risk](Output%20pictures/Portfolio%20risk%20analysis.png)
+
+### 🔗 Correlation Matrix
+![Correlation](Output%20pictures/Stock%20correlation%20matrix.png)
+
+### 🎯 Monte Carlo Simulation
+![Monte Carlo](Output%20pictures/Monte%20carlo%20simulation.png)
+
+### ⚠️ Value at Risk
+![VaR](Output%20pictures/VaR.png)
+
+### 🧠 AI Insights
+![AI](Output%20pictures/AI%20insights.png)
 
 ## 🧠 Technologies Used
 
