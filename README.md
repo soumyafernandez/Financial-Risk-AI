@@ -19,6 +19,9 @@ The dashboard fetches stock market data, calculates financial metrics, and visua
 - 📅 Custom Date Range Selection
 
 ---
+## 📸 Dashboard Preview
+
+![Dashboard]("Output pictures/Financial Risk Dashboard.png")
 
 ## 🧠 Technologies Used
 
